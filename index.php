@@ -16,7 +16,6 @@
 <p>Algum texto da pagina</p>
 
 <script src="lgpd.js"></script>
-
 </body>
 </html>
 

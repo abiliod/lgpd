@@ -1,4 +1,5 @@
 let lgpdUrl = 'https://jsonplaceholder.typicode.com/post';
+
 let lgpdHtml =
     '<div class="lgpd">\n' +
     '    <div class="lgpd--left">\n' +
@@ -28,8 +29,7 @@ if(!lsContent){
 
         if (!json.error != ''){
             let id = 123; // json.id;
-
-            localStorage.setItem('lgpd',id,'teste de cookie');
+            localStorage.setItem('lgpd',id);
         }
 
     });
@@ -40,7 +40,6 @@ if(!lsContent){
 }
 else{
     alert (lsContent);  //seu cookie lggpd listando o valor
-
 }
 
 
