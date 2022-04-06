@@ -28,19 +28,47 @@ if(!lsContent){
         let json = await result.json();
 
         if (!json.error != ''){
-            let id = 123; // json.id;
-            localStorage.setItem('lgpd',id);
-        }
+            let id = 'Aceito'; // json.id;
+            localStorage.setItem('lgpd', id, 86400*30, "/");
+            lsContent = localStorage.getItem('lgpd');
 
+            // document.getElementById("textLgpd").value = lsContent;
+        }
+        // if(localStorage.getItem('lgpd')) {
+        //     // alert(lsContent);
+        //     let lgpdprivateHtml =
+        //         '<div class="private" >\n' +
+        //         '    <div >\n' +
+        //         '    <input type="text" id="lgpdPrivate" value=' + lsContent + ' />\n' +
+        //         '    </div>\n' +
+        //         '</div>\n' +
+        //         '<link rel="stylesheet" href="lgpd.css"/>';
+        //     document.body.innerHTML += lgpdprivateHtml;
+        // }
     });
 
-    // #######  executar no console ############
-    //      localStorage.removeItem('lgpd')
-    // #######  executar no console ############
+
+}else{
+    // let lgpdprivateHtml =
+    //     '<div class="private" >\n' +
+    //     '    <div >\n' +
+    //     '    <input type="text" id="lgpdPrivate" value='+ lsContent +' />\n'+
+    //     '    </div>\n' +
+    //     '</div>\n' +
+    //     '<?php $lsContent = "document.getfieldById(lgpdPrivate).value"?>; \n' +
+    //     '<link rel="stylesheet" href="lgpd.css"/>';
+    // document.body.innerHTML += lgpdprivateHtml;
 }
-else{
-    alert (lsContent);  //seu cookie lggpd listando o valor
-}
+
+// #######  executar no console ############
+//      localStorage.removeItem('lgpd')
+// #######  executar no console ############
+
+
+
+
+
+
 
 
 
